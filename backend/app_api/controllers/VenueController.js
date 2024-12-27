@@ -48,11 +48,7 @@ const listVenues = async function (req, res) {
         };
       });
       if (venues.length > 0) createResponse(res, "200", venues);
-<<<<<<< HEAD
       else createResponse(res, "200", []);
-=======
-      else createResponse(res, "200",[]);
->>>>>>> e4cd6635d4be8f5250f7a9c9056f494946d4af22
     });
   } catch (error) {
     createResponse(res, "404", error);

@@ -18,12 +18,6 @@ var allowCrossDomain = function(req, res, next) {
 };
 
 app.use(allowCrossDomain);
-<<<<<<< HEAD
-
-=======
-app.use(express.json());
-app.use(express.urlencoded({extended:false}));
->>>>>>> e4cd6635d4be8f5250f7a9c9056f494946d4af22
 app.use("/api",apiRoute);
 
 app.use('/users', usersRouter);
